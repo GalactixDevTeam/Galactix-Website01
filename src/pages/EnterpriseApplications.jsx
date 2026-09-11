@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import ServiceHero from "../components/ServiceHero";
-const EnterpriseHeroImg = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111887/Enterprisehero.png";
+const EnterpriseHeroImg = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789121980/Enterprisehero.png";
 import enterprise1 from "../assets/enterprise/enterprise1.svg";
 import enterprise2 from "../assets/enterprise/enterprise2.svg";
 import enterprise3 from "../assets/enterprise/enterprise3.svg";
