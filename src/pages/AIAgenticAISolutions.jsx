@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import ServiceHero from "../components/ServiceHero";
-import heroImg from "../assets/4d9b47febc284c7ab0bbd97fc632e4096acf18af.png";
+const heroImg = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111965/4d9b47febc284c7ab0bbd97fc632e4096acf18af.png";
 import businessImpactIcon from "../assets/business impact.svg";
 import responsibleAiIcon from "../assets/responsible ai.svg";
 import domainExpertiseIcon from "../assets/domain expertise.svg";

@@ -8,7 +8,7 @@ import LazyImage from "../components/LazyImage";
 
 // Hero Assets
 import us1 from "../assets/us Training/us1.svg";
-import us2 from "../assets/us Training/us2.png";
+const us2 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789112954/us2.png";
 import us3 from "../assets/us Training/us3.svg";
 import us4 from "../assets/us Training/us4.svg";
 
@@ -19,9 +19,9 @@ import us8 from "../assets/us Training/us8.svg";
 import us9 from "../assets/us Training/us9.svg";
 
 // Live Sessions Assets
-import us10 from "../assets/us Training/us10.png";
-import us11 from "../assets/us Training/us11.png";
-import us12 from "../assets/us Training/us12.png";
+const us10 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113697/us10.png";
+const us11 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113719/us11.png";
+const us12 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113740/us12.png";
 import us13 from "../assets/us Training/us13.png";
 
 // Counsellor & Why Choose Assets
@@ -33,7 +33,7 @@ import us18 from "../assets/us Training/us18.svg";
 import us19 from "../assets/us Training/us19.svg";
 import us20 from "../assets/us Training/us20.svg";
 import us21 from "../assets/us Training/us21.svg";
-import us22 from "../assets/us Training/us22.png";
+const us22 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113818/us22.png";
 const easeOutCubic = [0.22, 1, 0.36, 1];
 
 const fadeUp = {

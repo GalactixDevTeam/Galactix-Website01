@@ -4,7 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import Layout from "../components/Layout";
 import ServiceHero from "../components/ServiceHero";
 import LazyImage from "../components/LazyImage";
-import trainingHero from "../assets/image 2044.png";
+const trainingHero = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789112863/image_2044.png";
 import graduationIcon from "../assets/lucide_graduation-cap.svg";
 import codeIcon from "../assets/boxicons_code.svg";
 import warRoomIcon from "../assets/war rooms.svg";

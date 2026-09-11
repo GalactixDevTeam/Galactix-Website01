@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import ServiceHero from "../components/ServiceHero";
 import LazyImage from "../components/LazyImage";
-import vlsiHeroImg from "../assets/VLSI/vlsihero.png";
+const vlsiHeroImg = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789112733/vlsihero.jpg";
 import Arrow from "../assets/cloud/Arrow.svg";
 
 import vlsi1 from "../assets/VLSI/vlsi1.svg";

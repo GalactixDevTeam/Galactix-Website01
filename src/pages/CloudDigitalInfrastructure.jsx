@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import ServiceHero from "../components/ServiceHero";
 
 // Cloud Assets
-import cloudHero from "../assets/92b377d1940d1be1ccb5d1e35b795aec606baa33.png";
+const cloudHero = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789112136/92b377d1940d1be1ccb5d1e35b795aec606baa33.png";
 import cloud2 from "../assets/cloud/cloud2.svg";
 import cloud3 from "../assets/cloud/cloud3.svg";
 import cloud4 from "../assets/cloud/cloud4.svg";

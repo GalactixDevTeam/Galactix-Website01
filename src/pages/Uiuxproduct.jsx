@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import ServiceHero from "../components/ServiceHero";
-import Uiuxhero from "../assets/Uiuxhero.png";
+const Uiuxhero = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789112057/Uiuxhero.png";
 
 // Service & Approach SVG Icons
 import soft1 from "../assets/soft1.svg";

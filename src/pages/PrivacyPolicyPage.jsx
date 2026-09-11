@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import privacypolicy from "../assets/privacypolicy.png";
+const privacypolicy = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113956/privacypolicy.png";
 import terms2 from "../assets/terms2.png";
 
 export default function PrivacyPolicy() {

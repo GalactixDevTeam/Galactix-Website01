@@ -17,7 +17,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Layout from "../components/Layout";
-import servicesHero from "../assets/services-hero.png";
+const servicesHero = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111495/services-hero.png";
 import serviceOne from "../assets/serviceone.svg";
 import serviceTwo from "../assets/servicetwo.svg";
 import serviceThree from "../assets/servicethree.svg";

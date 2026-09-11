@@ -8,7 +8,7 @@ import LazyImage from "../components/LazyImage";
 import Arrow from "../assets/cloud/Arrow.svg";
 
 // Research Assets
-import research1 from "../assets/Research/research1.png";
+const research1 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789112391/research1.png";
 import research2 from "../assets/Research/research2.svg";
 import research3 from "../assets/Research/research3.svg";
 import research4 from "../assets/Research/research4.svg";

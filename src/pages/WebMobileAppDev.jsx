@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import ServiceHero from "../components/ServiceHero";
 
 // Web & Mobile Assets
-import web1 from "../assets/web&mobile/web1.png";
+const web1 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111748/web1.png";
 import web2 from "../assets/web&mobile/web2.svg";
 import web3 from "../assets/web&mobile/web3.svg";
 import web4 from "../assets/web&mobile/web4.svg";

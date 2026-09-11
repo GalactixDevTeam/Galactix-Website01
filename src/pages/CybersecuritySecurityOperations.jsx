@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import LazyImage from "../components/LazyImage";
 import ServiceHero from "../components/ServiceHero";
-import cybersecurityHero from "../assets/cybersecurityhero.png";
+const cybersecurityHero = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789112210/cybersecurityhero.png";
 
 // SVG Icons for WHAT WE DO section
 import securityAssessmentIcon from "../assets/securit assessment.svg";

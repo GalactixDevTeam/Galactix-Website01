@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import ServiceHero from "../components/ServiceHero";
-import softwarehero from "../assets/softwarehero.png";
+const softwarehero = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111402/softwarehero.png";
 
 // Tech Stack SVGs
 import tech1 from "../assets/tech1.svg";

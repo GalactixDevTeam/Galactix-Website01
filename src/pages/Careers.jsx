@@ -6,19 +6,19 @@ import Layout from "../components/Layout";
 import { jobOpenings } from "../data/jobOpenings";
 
 // Images
-import career1 from "../assets/career1.png";
+const career1 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789109246/career1.png";
 import career2 from "../assets/career2.png";
 import career3 from "../assets/career3.png";
 import career4 from "../assets/career4.png";
 import career5 from "../assets/career5.png";
 import career6 from "../assets/career6.png";
-import career7 from "../assets/career7.png";
+const career7 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113337/career7.png";
 import career8 from "../assets/career8.png";
-import career9 from "../assets/career9.png";
+const career9 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113362/career9.png";
 import career10 from "../assets/career10.png";
 import career11 from "../assets/career11.png";
 import career12 from "../assets/career12.png";
-import career13 from "../assets/career13.png";
+const career13 = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789109303/career13.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },

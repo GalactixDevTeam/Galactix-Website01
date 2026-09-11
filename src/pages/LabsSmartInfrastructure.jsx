@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import LazyImage from "../components/LazyImage";
 import ServiceHero from "../components/ServiceHero";
-import labshero from "../assets/labshero.png";
+const labshero = "https://res.cloudinary.com/kf1uuvct/image/upload/v1789112286/labshero.png";
 
 // Service & Approach SVG Icons
 import soft1 from "../assets/soft1.svg";
