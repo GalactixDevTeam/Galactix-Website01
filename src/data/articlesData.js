@@ -342,7 +342,7 @@ export const articlesData = [
       },
       {
         heading: "Key Takeaway",
-        paragraphs: [
+        paragraphs: [ 
           "Physical AI represents the next major frontier: bringing intelligence out of the screen and into the physical world. The combination of advanced AI models and robotics could fundamentally change manufacturing, logistics, healthcare, and everyday life."
         ]
       }
