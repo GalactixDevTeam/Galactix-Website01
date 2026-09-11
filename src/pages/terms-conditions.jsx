@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import terms1 from "../assets/terms1.png";
 import terms2 from "../assets/terms2.png";
 
 export default function TermsAndConditions() {
@@ -183,7 +182,7 @@ export default function TermsAndConditions() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="flex-1 flex justify-center md:justify-end relative z-10"
             >
-              <img src={terms1} alt="Terms and Conditions" className="w-full max-w-[500px] object-contain drop-shadow-xl" />
+              <img src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789113930/terms1.png" alt="Terms and Conditions" className="w-full max-w-[500px] object-contain drop-shadow-xl" />
             </motion.div>
           </div>
         </section>
@@ -268,3 +267,4 @@ export default function TermsAndConditions() {
     </Layout>
   );
 }
+

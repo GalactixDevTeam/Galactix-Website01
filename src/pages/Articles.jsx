@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 import LazyImage from "../components/LazyImage";
 import { articlesData } from "../data/articlesData";
 
-import articlesHero from "../assets/articleshero.png";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -85,7 +84,7 @@ export default function Articles() {
                                 style={{ borderRadius: "24px 24px 24px 80px" }}
                             >
                                 <img
-                                    src={articlesHero}
+                                    src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789111754/articleshero.png"
                                     alt="Articles - Ideas, insights, and perspectives on the future of AI"
                                     loading="lazy"
                                     className="w-full h-auto block object-cover"

@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import disclaimerHero from "../assets/835483e87292e68758b4243cc28e40150c520a90.png";
 import terms2 from "../assets/terms2.png";
 
 export default function Disclaimer() {
@@ -280,7 +279,7 @@ export default function Disclaimer() {
               className="flex-1 flex justify-center md:justify-end relative z-10"
             >
               <img
-                src={disclaimerHero}
+                src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789114027/835483e87292e68758b4243cc28e40150c520a90.png"
                 alt="Disclaimer"
                 className="w-full max-w-[500px] object-contain drop-shadow-xl"
               />
@@ -390,4 +389,5 @@ export default function Disclaimer() {
     </Layout>
   );
 }
+
 
