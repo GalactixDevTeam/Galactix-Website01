@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import arrowAsset from "../assets/ARROW.png";
-import galactixVideo from "../assets/Galactixvideo_white.mp4";
 import statIcon1 from "../assets/Vector (4).svg";
 import statIcon2 from "../assets/Group.svg";
 import statIcon3 from "../assets/Vector (3).svg";
@@ -25,11 +24,6 @@ import multiAgentIcon from "../assets/carbon_ai-agent.svg";
 import seoAgentIcon from "../assets/streamline-ultimate_seo-search-graph-bold.svg";
 import enterpriseAiIcon from "../assets/griddy-icons_enterprise.svg";
 import agenticBusinessIcon from "../assets/lucide_briefcase-business.svg";
-import telehealthImg from "../assets/telehealth.png";
-import kodemilabsImg from "../assets/kodemi.png";
-import teknowsageImg from "../assets/teknowsage.png";
-import synaptimeshImg from "../assets/synaptimesh.png";
-import aiInProjectsImg from "../assets/ai in projects.png";
 import manipurLogo from "../assets/MANIPUR.png";
 import hitamLogo from "../assets/HITAM'.png";
 import assamLogo from "../assets/GOVT.ASSAM.png";
@@ -39,7 +33,6 @@ import nasscomLogo from "../assets/NAASCOM.png";
 import cmmiLogo from "../assets/CMMI.png";
 import iso9001Logo from "../assets/ISO-2.png";
 import iso21001Logo from "../assets/ISO-1.png";
-import aboutGalactixImg from "../assets/0f0602b2996e60efbb41cc33ed905dbfbaf8572f.png";
 import researchDrivenIcon from "../assets/uil_brain.svg";
 import customerSuccessIcon from "../assets/customer success first.svg";
 import Layout from "../components/Layout";
@@ -121,7 +114,7 @@ export default function Home() {
           className="w-[90%] md:w-[70%] lg:w-[55%] max-w-[1050px] mx-auto"
         >
           <video
-            src={galactixVideo}
+            src="https://res.cloudinary.com/kf1uuvct/video/upload/v1789105502/Galactixvideo_white.mp4"
             autoPlay
             muted
             loop
@@ -395,7 +388,7 @@ export default function Home() {
             >
               <div className="w-full overflow-hidden rounded-[20px] sm:rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] bg-gray-50">
                 <img
-                  src={aboutGalactixImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109218/617e3379e7df3784b76a327dd68638b6128aa8f5.png"
                   alt="About Galactix Team"
                   loading="lazy"
                   decoding="async"
@@ -804,7 +797,7 @@ export default function Home() {
                 <div>
                   <div className="w-full h-[190px] sm:h-[200px] rounded-[14px] bg-[#EAF5EE] group-hover:bg-[#DEEFE4] transition-colors duration-300 flex items-center justify-center p-2 mb-5 overflow-hidden">
                     <img
-                      src={telehealthImg}
+                      src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789112079/telehealth.png"
                       alt="TeleHealth with AI Integration"
                       loading="lazy"
                       decoding="async"
@@ -832,7 +825,7 @@ export default function Home() {
                 <div>
                   <div className="w-full h-[190px] sm:h-[200px] rounded-[14px] bg-[#F1F6FF] group-hover:bg-[#EAEFFF] transition-colors duration-300 flex items-center justify-center p-3 mb-5 overflow-hidden">
                     <img
-                      src={kodemilabsImg}
+                      src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789111979/kodemi.png"
                       alt="Kodemi Labs Open Platform"
                       loading="lazy"
                       decoding="async"
@@ -860,7 +853,7 @@ export default function Home() {
                 <div>
                   <div className="w-full h-[190px] sm:h-[200px] rounded-[14px] bg-[#EAF5EE] group-hover:bg-[#DEEFE4] transition-colors duration-300 flex items-center justify-center p-2 mb-5 overflow-hidden">
                     <img
-                      src={teknowsageImg}
+                      src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789112046/teknowsage.png"
                       alt="Teknowsage"
                       loading="lazy"
                       decoding="async"
@@ -888,7 +881,7 @@ export default function Home() {
                 <div>
                   <div className="w-full h-[190px] sm:h-[200px] rounded-[14px] bg-[#F1F6FF] group-hover:bg-[#EAEFFF] transition-colors duration-300 flex items-center justify-center p-3 mb-5 overflow-hidden">
                     <img
-                      src={synaptimeshImg}
+                      src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789112218/synaptimesh.png"
                       alt="SynaptiMesh"
                       loading="lazy"
                       decoding="async"
@@ -916,7 +909,7 @@ export default function Home() {
                 <div>
                   <div className="w-full h-[190px] sm:h-[200px] rounded-[14px] bg-[#F1F6FF] group-hover:bg-[#EAEFFF] transition-colors duration-300 flex items-center justify-center p-2 mb-5 overflow-hidden">
                     <img
-                      src={aiInProjectsImg}
+                      src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789112234/ai_in_projects.png"
                       alt="AI Automations"
                       loading="lazy"
                       decoding="async"
@@ -1209,3 +1202,4 @@ export default function Home() {
     </Layout>
   );
 }
+

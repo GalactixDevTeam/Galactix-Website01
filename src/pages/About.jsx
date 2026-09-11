@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 import { motion, useInView, useScroll, useMotionValueEvent } from "framer-motion";
 import Layout from "../components/Layout";
 import LazyImage from "../components/LazyImage";
-import aboutBuildingImage from "../assets/7322e6326ff3943ff04c68ac1e8fe60de2f5e2a5.png";
 import statProjectsDelivered from "../assets/PROJECTS DELIVERS.svg";
 import statHappyClients from "../assets/HAPPY CLIENTS.svg";
 import statBusinessDomains from "../assets/BUSINESS DOMAINS.svg";
 import statCommitmentExcellence from "../assets/COMMITMENT OF EXCELENCE.svg";
 
-import ourStoryImage from "../assets/WhatsApp Image 2026-07-31 at 8.43.38 PM.jpeg";
 import iconAiPowered from "../assets/AI POWERED.svg";
 import iconResearchDriven from "../assets/RESEARCH DRIVEN.svg";
 import iconEngineering from "../assets/ENGINEERING.svg";
@@ -26,12 +24,7 @@ import iconExpansion from "../assets/EXPANSION.svg";
 import iconRecognition from "../assets/RECOGNITION.svg";
 import iconFutureReady from "../assets/FUTURE READY.svg";
 
-import saikrishnaImage from "../assets/SAIKRISHNA.png";
 
-import sriImage from "../assets/SRI P.png";
-import sajjanImage from "../assets/SAJJAR.png";
-import vipinImage from "../assets/VIPIM.png";
-import sravaniImage from "../assets/SRAVANI.png";
 
 // Subtle easing & variants
 const easeOutCubic = [0.22, 1, 0.36, 1];
@@ -375,7 +368,7 @@ export default function About() {
                   }}
                 >
                   <LazyImage
-                    src={aboutBuildingImage}
+                    src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109199/7322e6326ff3943ff04c68ac1e8fe60de2f5e2a5.png"
                     alt="Engineering Tomorrow Through Innovation"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                   />
@@ -450,7 +443,7 @@ export default function About() {
                   }}
                 >
                   <LazyImage
-                    src={ourStoryImage}
+                    src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789112892/WhatsApp_Image_2026-07-31_at_8.43.38_PM.jpg"
                     alt="From Vision to Meaningful Impact"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                   />
@@ -776,7 +769,7 @@ export default function About() {
                     className="w-full max-w-[355px] overflow-hidden rounded-[24px] shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
                   >
                     <LazyImage
-                      src={saikrishnaImage}
+                      src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789112962/SAIKRISHNA.png"
                       alt="Dr. Saikrishna Kauri"
                       className="w-full h-auto max-h-[535px] object-cover block transition-transform duration-700 hover:scale-[1.02]"
                     />

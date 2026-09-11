@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import Layout from "../components/Layout";
 import LazyImage from "../components/LazyImage";
-import contactHero from "../assets/contact-hero.png";
 import linkedin from "../assets/linkedin.png";
 import mapPin from "../assets/mappin.svg";
 import contact1 from "../assets/contact1.svg";
@@ -233,7 +232,7 @@ export default function Contact() {
                 style={{ borderRadius: "20px 20px 20px 78px" }}
               >
                 <LazyImage
-                  src={contactHero}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109262/contact-hero.png"
                   alt="Galactix Solutions Team Discussion"
                   className="w-full h-full object-cover object-center rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[78px]"
                   style={{ borderRadius: "20px 20px 20px 78px" }}
@@ -660,4 +659,5 @@ export default function Contact() {
     </Layout>
   );
 }
+
 

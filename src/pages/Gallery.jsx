@@ -2,57 +2,26 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import Layout from "../components/Layout";
 
-// Video Assets
-import videoIncorporation from "../assets/Galactix Incorporation day Video (1).mp4";
-import videoFunSaturday from "../assets/Fun saturday video 1.mp4";
-import videoRepublicDay from "../assets/Republic Day Celebrations.mp4";
-import videoGaneshChaturthi from "../assets/Ganesh Chaturthi video 2025.mp4";
-
-// Photo Assets
-import kodemiImg from "../assets/our gallery/kodemi inaugartion.jpg";
-import synaptimeshImg from "../assets/our gallery/Synaptimesh inaugaration.jpg";
-import culturalProgramsFImg from "../assets/WhatsApp Image 2026-07-31 at 8.43.38 PM.jpeg";
-import culturalMImg from "../assets/our gallery/cultural m.jpg";
-import incorporationKodemiImg from "../assets/our gallery/Incorporation & Kodemi.png";
-import incorporationDayImg from "../assets/our gallery/Incorporation day.png";
-import donationImg from "../assets/our gallery/Donation.png";
-import industrialVisitImg from "../assets/Industrial visit at Galactix.jpg";
-import trainingSessionsImg from "../assets/our gallery/Training sessions.jpg";
-import teamOutingImg from "../assets/our gallery/Team outing.png";
-import incorporationHitamImg from "../assets/our gallery/Incorporation kodemi hitam team.png";
-import trainingSessionsPngImg from "../assets/our gallery/Training sessions.png";
-import teamMoments1Img from "../assets/our gallery/WhatsApp Image 2026-09-07 at 16.25.04.jpeg";
-import teamMoments2Img from "../assets/our gallery/WhatsApp Image 2026-09-07 at 16.24.48.jpeg";
-import ugadiCelebrations1Img from "../assets/our gallery/WhatsApp Image 2026-09-07 at 16.24.56.jpeg";
-import ugadiCelebrations2Img from "../assets/our gallery/WhatsApp Image 2026-09-07 at 16.25.13.jpeg";
-import ganeshChaturthi2025Img from "../assets/our gallery/ganesh chaturthi 2025.jpeg";
-import bappaBlessingsImg from "../assets/1b20fb2d-5dd4-4b6c-9d1d-2254702ab0bf.png";
-
-// Video order:
-// 1. Galactix Incorporation Day
-// 2. Fun Saturday
-// 3. Republic Day Celebrations
-// 4. Ganesh Chaturthi 2025
 const videoList = [
   {
     id: 1,
     title: "Galactix Incorporation Day",
-    src: videoIncorporation,
+    src: "https://res.cloudinary.com/kf1uuvct/video/upload/v1789105607/Galactix_Incorporation_day_Video_1.mp4",
   },
   {
     id: 2,
     title: "Fun Saturday",
-    src: videoFunSaturday,
+    src: "https://res.cloudinary.com/kf1uuvct/video/upload/v1789105528/Fun_Saturday_video_2.mp4",
   },
   {
     id: 3,
     title: "Republic Day Celebrations",
-    src: videoRepublicDay,
+    src: "https://res.cloudinary.com/kf1uuvct/video/upload/v1789105453/Republic_Day_Celebrations.mp4",
   },
   {
     id: 4,
     title: "Ganesh Chaturthi 2025",
-    src: videoGaneshChaturthi,
+    src: "https://res.cloudinary.com/kf1uuvct/video/upload/v1789105310/Ganesh_Chaturthi_video_2025.mp4",
   },
 ];
 
@@ -440,7 +409,7 @@ export default function Gallery() {
                 className="relative w-full h-[260px] sm:h-[300px] md:h-[320px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
               >
                 <img
-                  src={kodemiImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109398/kodemi_inaugartion.jpg"
                   alt="Inauguration of KodeMi Labs Project"
                   loading="lazy"
                   decoding="async"
@@ -458,7 +427,7 @@ export default function Gallery() {
                 className="relative w-full h-[260px] sm:h-[300px] md:h-[320px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
               >
                 <img
-                  src={synaptimeshImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109390/Synaptimesh_inaugaration.jpg"
                   alt="Inauguration of SynaptiMesh Project"
                   loading="lazy"
                   decoding="async"
@@ -481,7 +450,7 @@ export default function Gallery() {
                   className="relative w-full h-[260px] sm:h-[300px] md:h-[320px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
                 >
                   <img
-                    src={culturalProgramsFImg}
+                    src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109286/e77681322131ff3b4726e49cb06e6edd8494c4e6.png"
                     alt="Cultural Programs"
                     loading="lazy"
                     decoding="async"
@@ -500,7 +469,7 @@ export default function Gallery() {
                   className="relative w-full h-[220px] sm:h-[250px] md:h-[275px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
                 >
                   <img
-                    src={incorporationKodemiImg}
+                    src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109380/Incorporation_Kodemi.png"
                     alt="KodeMi Launch Event"
                     loading="lazy"
                     decoding="async"
@@ -521,7 +490,7 @@ export default function Gallery() {
                   className="relative w-full h-[180px] sm:h-[200px] md:h-[225px] flex-shrink-0 rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
                 >
                   <img
-                    src={culturalMImg}
+                    src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109359/cultural_m.jpg"
                     alt="Cultural Programs"
                     loading="lazy"
                     decoding="async"
@@ -539,7 +508,7 @@ export default function Gallery() {
                   className="relative w-full h-[260px] sm:h-[300px] md:h-[370px] md:flex-1 md:min-h-0 rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
                 >
                   <img
-                    src={incorporationDayImg}
+                    src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789110653/Incorporation_day.png"
                     alt="Incorporation Day"
                     loading="lazy"
                     decoding="async"
@@ -561,7 +530,7 @@ export default function Gallery() {
                 className="relative w-full h-[260px] sm:h-[300px] md:h-[330px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
               >
                 <img
-                  src={donationImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789110748/Donation.png"
                   alt="Donation"
                   loading="lazy"
                   decoding="async"
@@ -579,7 +548,7 @@ export default function Gallery() {
                 className="relative w-full h-[260px] sm:h-[300px] md:h-[330px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
               >
                 <img
-                  src={industrialVisitImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109333/Industrial_visit_at_Galactix.jpg"
                   alt="HITAM Industrial Visit at Galactix"
                   loading="lazy"
                   decoding="async"
@@ -601,7 +570,7 @@ export default function Gallery() {
                 className="relative w-full h-[280px] sm:h-[340px] md:h-[380px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
               >
                 <img
-                  src={trainingSessionsImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109411/Training_sessions.jpg"
                   alt="Training Sessions"
                   loading="lazy"
                   decoding="async"
@@ -619,7 +588,7 @@ export default function Gallery() {
                 className="relative w-full h-[280px] sm:h-[340px] md:h-[380px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
               >
                 <img
-                  src={teamOutingImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109405/Team_outing.png"
                   alt="Team Outing"
                   loading="lazy"
                   decoding="async"
@@ -641,7 +610,7 @@ export default function Gallery() {
                 className="relative w-full h-[320px] sm:h-[400px] md:h-[480px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
               >
                 <img
-                  src={incorporationHitamImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109385/Incorporation_kodemi_hitam_team.png"
                   alt="Incorporation & KodeMi HITAM Team"
                   loading="lazy"
                   decoding="async"
@@ -659,7 +628,7 @@ export default function Gallery() {
                 className="relative w-full h-[320px] sm:h-[400px] md:h-[480px] rounded-[10px] md:rounded-[12px] overflow-hidden shadow-sm group cursor-pointer"
               >
                 <img
-                  src={trainingSessionsPngImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789110635/Training_sessions_Roshani.png"
                   alt="Training Sessions"
                   loading="lazy"
                   decoding="async"
@@ -680,7 +649,7 @@ export default function Gallery() {
               {/* Image 1: Left 45% */}
               <div className="relative w-full h-[325px] sm:h-[375px] md:h-[425px] overflow-hidden group cursor-pointer">
                 <img
-                  src={teamMoments1Img}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109449/WhatsApp_Image_2026-09-07_at_16.25.04.jpg"
                   alt="Ugadi Celebrations"
                   loading="lazy"
                   decoding="async"
@@ -695,7 +664,7 @@ export default function Gallery() {
               {/* Image 2: Right 55% */}
               <div className="relative w-full h-[325px] sm:h-[375px] md:h-[425px] overflow-hidden group cursor-pointer">
                 <img
-                  src={teamMoments2Img}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109441/WhatsApp_Image_2026-09-07_at_16.24.48.jpg"
                   alt="Ugadi Celebrations"
                   loading="lazy"
                   decoding="async"
@@ -716,7 +685,7 @@ export default function Gallery() {
               {/* Image 1: Left */}
               <div className="relative w-full h-[280px] sm:h-[330px] md:h-[380px] overflow-hidden group cursor-pointer">
                 <img
-                  src={ganeshChaturthi2025Img}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109374/ganesh_chaturthi_2025.jpg"
                   alt="Ganesh Chaturthi Celebrations"
                   loading="lazy"
                   decoding="async"
@@ -732,7 +701,7 @@ export default function Gallery() {
               {/* Image 2: Right */}
               <div className="relative w-full h-[280px] sm:h-[330px] md:h-[380px] overflow-hidden group cursor-pointer">
                 <img
-                  src={bappaBlessingsImg}
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789111074/1b20fb2d-5dd4-4b6c-9d1d-2254702ab0bf.png"
                   alt="Ganesh Chaturthi Celebrations"
                   loading="lazy"
                   decoding="async"
@@ -751,4 +720,5 @@ export default function Gallery() {
     </Layout>
   );
 }
+
 
