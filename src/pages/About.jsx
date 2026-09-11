@@ -189,25 +189,25 @@ const milestones = [
 
 const teamMembers = [
   {
-    image: sriImage,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113048/SRI_P.png",
     name: "Srinath Pallabothu",
     role: "Founder & CEO",
     desc: "Entrepreneur and technologist focused on business growth, client success, and operational excellence.",
   },
   {
-    image: sajjanImage,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113016/SAJJAR.png",
     name: "Sajjan Kumar Agrawalla",
     role: "Delivery Manager",
     desc: "Driving seamless project delivery through effective team coordination, client engagement and timely execution.",
   },
   {
-    image: vipinImage,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789109274/VIPIM.png",
     name: "Vipin Mankala",
     role: "Lead Developer",
     desc: "Leading end-to-end software development with a focus on architecture, performance, quality, and continuous innovation.",
   },
   {
-    image: sravaniImage,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789113069/SRAVANI.png",
     name: "Sravani Kothuri",
     role: "Research Officer\n(VLSI & Electronics)",
     desc: "Driving research and innovation in VLSI & electronics, exploring emerging technologies & developing practical solutions.",

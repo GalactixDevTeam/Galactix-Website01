@@ -1,10 +1,3 @@
-import article1 from "../assets/article1.png";
-import article2 from "../assets/article2.png";
-import article3 from "../assets/article3.png";
-import article4 from "../assets/article4.png";
-import article5 from "../assets/article5.png";
-import article6 from "../assets/article6.png";
-
 export const articlesData = [
   {
     id: "gpt-6-astra",
@@ -14,7 +7,7 @@ export const articlesData = [
     tagline: "Smart AI. Real-world impact. A brighter tomorrow.",
     author: "By Galactix Solutions",
     readTime: "7 min read",
-    image: article1,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111688/article1.png",
     cardTitle: "GPT-6 Astra: How the New Generation of AI Is Changing Digital Work",
     cardDesc: "Artificial intelligence is moving beyond answering questions and generating content. The newest generation of AI systems is increasingly capable of understanding a goal, using digital tools, completing multiple steps.......",
     relatedIds: ["ai-agents-digital-workers", "google-gemini-flash", "claude-ai-coding"],
@@ -86,7 +79,7 @@ export const articlesData = [
     subtitle: "The Rise Of Autonomous Digital Workers",
     tagline: "Smart AI. Real-world impact. A brighter tomorrow.",
     author: "By Galactix Solutions",
-    image: article2,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111701/article2.png",
     cardTitle: "From Chatbots to AI Agents: The Rise of Autonomous Digital Workers",
     cardDesc: "For years, businesses used AI primarily through chatbots and assistants.Now, a new generation of AI systems is emerging: AI agents.Instead of simply responding to a request, agents can understand objectives, plan multiple steps.....",
     relatedIds: ["gpt-6-astra", "google-gemini-flash", "claude-ai-coding"],
@@ -160,7 +153,7 @@ export const articlesData = [
     subtitle: "Why Fast AI Models Matter More Than Ever",
     tagline: "Smart AI. Real-world impact. A brighter tomorrow.",
     author: "By Galactix Solutions",
-    image: article3,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111716/article3.png",
     cardTitle: "Google Gemini 3.8 Flash: Why Fast AI Models Matter More Than Ever",
     cardDesc: "AI models are becoming more capable—but intelligence alone isn't enough.For real-world applications, businesses also need speed, scalability and efficient execution.",
     relatedIds: ["gpt-6-astra", "ai-agents-digital-workers", "claude-ai-coding"],
@@ -229,7 +222,7 @@ export const articlesData = [
     subtitle: "Anthropic’s Next Step in AI for Coding and Knowledge Work",
     tagline: "Smart AI. Real-world impact. A brighter tomorrow.",
     author: "By Galactix Solutions",
-    image: article4,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111723/article4.png",
     cardTitle: "Claude Fable 5.1 & Mythos 5.1: Anthropic's Next Step in AI for Coding",
     cardDesc: "AI coding assistants are rapidly evolving from tools that autocomplete code into systems capable of supporting much larger parts of the software-development process.",
     relatedIds: ["gpt-6-astra", "ai-agents-digital-workers", "google-gemini-flash"],
@@ -294,7 +287,7 @@ export const articlesData = [
     subtitle: "When Artificial Intelligence Enters the Real World",
     tagline: "Smart AI. Real-world impact. A brighter tomorrow.",
     author: "By Galactix Solutions",
-    image: article5,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111736/article5.png",
     cardTitle: "Physical AI in 2026: When Artificial Intelligence Enters the Real World",
     cardDesc: "For most of the AI revolution, intelligence lived inside screens. Physical AI brings intelligent systems into the real world through robots, autonomous machines and AI-powered devices.....",
     relatedIds: ["gpt-6-astra", "google-gemini-flash", "physical-ai-2026"],
@@ -368,7 +361,7 @@ export const articlesData = [
     subtitle: "From AI Experiments to Real Business Transformation",
     tagline: "Smart AI. Real-world impact. A brighter tomorrow.",
     author: "By Galactix Solutions",
-    image: article6,
+    image: "https://res.cloudinary.com/kf1uuvct/image/upload/v1789111745/article6.png",
     cardTitle: "Enterprise AI in 2026: From AI Experiments to Real Business ......",
     cardDesc: "The first wave of enterprise AI was largely about experimentation.Companies created chatbots, tested copilots and explored generative AI....",
     relatedIds: ["gpt-6-astra", "physical-ai-2026", "enterprise-ai-2026"],
