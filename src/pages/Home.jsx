@@ -12,7 +12,6 @@ import cyberIcon from "../assets/CYBEER.svg";
 import cloudIcon from "../assets/akar-icons_cloud.svg";
 import chipIcon from "../assets/heroicons-outline_chip.svg";
 import researchIcon from "../assets/research and innovation.svg";
-import trainingIcon from "../assets/training and dev.svg";
 import vlsiIcon from "../assets/vlsi.svg";
 import labsIcon from "../assets/labicon1.svg";
 
@@ -107,26 +106,26 @@ export default function Home() {
     <Layout>
       {/* ── HERO & STATS SECTION ── */}
       <section className="w-full bg-white pt-0 pb-12 sm:pb-14 md:pb-16 overflow-hidden flex flex-col items-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96, y: 15 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.75, ease: easeOutCubic }}
-          className="w-[90%] md:w-[70%] lg:w-[55%] max-w-[1050px] mx-auto overflow-hidden bg-white"
-        >
+        <div className="w-[90%] md:w-[70%] lg:w-[55%] max-w-[1050px] mx-auto bg-white">
           <video
-            src="https://res.cloudinary.com/kf1uuvct/video/upload/q_auto,f_auto,w_1050,c_scale/v1789105502/Galactixvideo_white.mp4"
+            src="https://res.cloudinary.com/kf1uuvct/video/upload/v1789543125/Galactixvideo_white.mp4"
             preload="auto"
             autoPlay
             muted
             loop
             playsInline
-            disablePictureInPicture
-            disableRemotePlayback
             controls={false}
-            className="w-full h-auto aspect-video block mx-auto bg-white object-cover border-0 outline-none"
-            style={{ objectFit: "cover" }}
+            className="block w-full h-auto"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              border: "none",
+              outline: "none",
+              boxShadow: "none",
+            }}
           />
-        </motion.div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 15 }}
@@ -248,13 +247,13 @@ export default function Home() {
             <div className="w-12 h-1 bg-[#0047E4] rounded-full mt-3.5"></div>
           </motion.div>
 
-          {/* 3-column x 2-row Services Grid */}
+          {/* 3-column x 2-row Services Grid (Centered 2nd Row) */}
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-7"
           >
             {/* Service 1: Software Development */}
             <motion.div
@@ -263,7 +262,7 @@ export default function Home() {
               transition={{ duration: 0.25 }}
               id="service-software-development"
               onClick={() => navigate("/services/software-development")}
-              className="bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
+              className="lg:col-span-2 bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
             >
               <div className="w-16 h-16 rounded-full bg-[#F1F5FF] flex items-center justify-center mb-6 shrink-0 transition-transform duration-300 group-hover:scale-110">
                 <img src={softwareIcon} alt="Software Development" loading="lazy" decoding="async" className="w-8 h-8 object-contain" />
@@ -283,7 +282,7 @@ export default function Home() {
               transition={{ duration: 0.25 }}
               id="service-research-innovation"
               onClick={() => navigate("/services/research-innovation")}
-              className="bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
+              className="lg:col-span-2 bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
             >
               <div className="w-16 h-16 rounded-full bg-[#F1F5FF] flex items-center justify-center mb-6 shrink-0 transition-transform duration-300 group-hover:scale-110">
                 <img src={researchIcon} alt="Research & Innovation" loading="lazy" decoding="async" className="w-8 h-8 object-contain" />
@@ -303,7 +302,7 @@ export default function Home() {
               transition={{ duration: 0.25 }}
               id="service-cybersecurity"
               onClick={() => navigate("/services/cybersecurity-security-operations")}
-              className="bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
+              className="lg:col-span-2 bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
             >
               <div className="w-16 h-16 rounded-full bg-[#F1F5FF] flex items-center justify-center mb-6 shrink-0 transition-transform duration-300 group-hover:scale-110">
                 <img src={cyberIcon} alt="Cybersecurity & Security Operations" loading="lazy" decoding="async" className="w-8 h-8 object-contain" />
@@ -316,34 +315,14 @@ export default function Home() {
               </p>
             </motion.div>
 
-            {/* Service 4: Training & Development */}
-            <motion.div
-              variants={fadeUp}
-              whileHover={{ y: -6, boxShadow: "0 14px 30px rgba(0,0,0,0.08)", borderColor: "#0825E8" }}
-              transition={{ duration: 0.25 }}
-              id="service-training-development"
-              onClick={() => navigate("/services/training-development")}
-              className="bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
-            >
-              <div className="w-16 h-16 rounded-full bg-[#F1F5FF] flex items-center justify-center mb-6 shrink-0 transition-transform duration-300 group-hover:scale-110">
-                <img src={trainingIcon} alt="Training & Development" loading="lazy" decoding="async" className="w-8 h-8 object-contain" />
-              </div>
-              <h3 className="text-xl sm:text-[22px] font-bold text-[#0A1731] group-hover:text-[#0825E8] transition-colors duration-200 mb-3 leading-snug">
-                Training & Development
-              </h3>
-              <p className="text-[15px] sm:text-base text-gray-500 font-normal leading-relaxed">
-                Industry-focused training programs that build skills, strengthen capabilities, and prepare future-ready talent.
-              </p>
-            </motion.div>
-
-            {/* Service 5: Labs & Smart Infrastructure */}
+            {/* Service 4: Labs & Smart Infrastructure */}
             <motion.div
               variants={fadeUp}
               whileHover={{ y: -6, boxShadow: "0 14px 30px rgba(0,0,0,0.08)", borderColor: "#0825E8" }}
               transition={{ duration: 0.25 }}
               id="service-labs-smart-infrastructure"
               onClick={() => navigate("/services/labs-smart-infrastructure")}
-              className="bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
+              className="lg:col-span-2 lg:col-start-2 bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
             >
               <div className="w-16 h-16 rounded-full bg-[#F1F5FF] flex items-center justify-center mb-6 shrink-0 transition-transform duration-300 group-hover:scale-110">
                 <img src={chipIcon} alt="Labs & Smart Infrastructure" loading="lazy" decoding="async" className="w-8 h-8 object-contain" />
@@ -356,14 +335,14 @@ export default function Home() {
               </p>
             </motion.div>
 
-            {/* Service 6: VLSI, IoT & Embedded */}
+            {/* Service 5: VLSI, IoT & Embedded */}
             <motion.div
               variants={fadeUp}
               whileHover={{ y: -6, boxShadow: "0 14px 30px rgba(0,0,0,0.08)", borderColor: "#0825E8" }}
               transition={{ duration: 0.25 }}
               id="service-vlsi-iot"
               onClick={() => navigate("/services/vlsi-iot-embedded")}
-              className="bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
+              className="lg:col-span-2 bg-white border border-[#E5E7EB] rounded-[16px] p-7 flex flex-col items-start text-left shadow-sm scroll-mt-28 cursor-pointer group"
             >
               <div className="w-16 h-16 rounded-full bg-[#F1F5FF] flex items-center justify-center mb-6 shrink-0 transition-transform duration-300 group-hover:scale-110">
                 <img src={vlsiIcon} alt="VLSI, IoT & Embedded" loading="lazy" decoding="async" className="w-8 h-8 object-contain" />
@@ -393,7 +372,7 @@ export default function Home() {
             >
               <div className="w-full overflow-hidden rounded-[20px] sm:rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] bg-gray-50">
                 <img
-                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789109218/617e3379e7df3784b76a327dd68638b6128aa8f5.png"
+                  src="https://res.cloudinary.com/kf1uuvct/image/upload/v1789539291/Galactix_Solutions_Corporate_Profile_V1.png"
                   alt="About Galactix Team"
                   loading="lazy"
                   decoding="async"

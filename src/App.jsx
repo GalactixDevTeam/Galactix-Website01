@@ -18,8 +18,6 @@ import LabsSmartInfrastructure from "./pages/LabsSmartInfrastructure";
 import CybersecuritySecurityOperations from "./pages/CybersecuritySecurityOperations";
 import ResearchInnovation from "./pages/ResearchInnovation";
 import EnterpriseApplications from "./pages/EnterpriseApplications";
-import USTrainings from "./pages/USTrainings";
-import TrainingDevelopment from "./pages/TrainingDevelopment";
 import VlsiIotEmbedded from "./pages/VlsiIotEmbedded";
 import Articles from "./pages/Articles";
 import ArticleDetails from "./pages/ArticleDetails";
@@ -44,10 +42,8 @@ function App() {
         <Route path="/services/software-development/cloud-infrastructure" element={<CloudDigitalInfrastructure />} />
         <Route path="/services/cybersecurity-security-operations" element={<CybersecuritySecurityOperations />} />
         <Route path="/services/labs-smart-infrastructure" element={<LabsSmartInfrastructure />} />
-        <Route path="/services/training-development" element={<TrainingDevelopment />} />
         <Route path="/services/vlsi-iot-embedded" element={<VlsiIotEmbedded />} />
         <Route path="/services/research-innovation" element={<ResearchInnovation />} />
-        <Route path="/services/training-development/us-trainings" element={<USTrainings />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:slug" element={<ArticleDetails />} />
         <Route path="/careers" element={<Career />} />

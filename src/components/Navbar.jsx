@@ -60,17 +60,6 @@ export default function Navbar() {
         { name: "Electronics / Hardware Engineering", path: "/services/vlsi-iot-embedded", anchor: "vlsi-what-we-do" },
       ],
     },
-    {
-      name: "Training & Development",
-      path: "/services/training-development",
-      subItems: [
-        { name: "Industry-Oriented Training", path: "/services/training-development" },
-        { name: "Live Project-Based Learning", path: "/services/training-development" },
-        { name: "War Room Collaboration", path: "/services/training-development" },
-        { name: "80/20 Practical Learning Model", path: "/services/training-development" },
-        { name: "US Training programs", path: "/services/training-development/us-trainings" },
-      ],
-    },
   ];
 
   // Hover handlers with debounce hysteresis to prevent flickering

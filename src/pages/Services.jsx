@@ -25,7 +25,6 @@ import softwareIcon from "../assets/boxicons_code.svg";
 import cyberIcon from "../assets/CYBEER.svg";
 import chipIcon from "../assets/heroicons-outline_chip.svg";
 import researchIcon from "../assets/research and innovation.svg";
-import trainingIcon from "../assets/training and dev.svg";
 import vlsiIcon from "../assets/vlsi.svg";
 import delivery1 from "../assets/delivery1.svg";
 import delivery2 from "../assets/delivery2.svg";
@@ -100,12 +99,6 @@ const coreServices = [
     desc: "Enterprise-grade security solutions designed to detect, respond to, and protect critical IT environments.",
     icon: cyberIcon,
     path: "/services/cybersecurity-security-operations",
-  },
-  {
-    title: "Training & Development",
-    desc: "Industry-focused training programs that build skills, strengthen capabilities, and prepare future-ready talent.",
-    icon: trainingIcon,
-    path: "/services/training-development",
   },
   {
     title: "Labs & Smart Infrastructure",
@@ -380,19 +373,20 @@ export default function Services() {
           </div>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8"
             variants={stagger}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-50px" }}
           >
             {coreServices.map((service, index) => {
+              const isSecondRowFirst = index === 3;
               return (
                 <motion.div
                   key={index}
                   variants={fadeUp}
                   onClick={() => service.path && navigate(service.path)}
-                  className="bg-white border border-[#E2E8F0] rounded-[22px] p-7 sm:p-8 hover:shadow-xl hover:border-blue-200 transition-all duration-300 group flex flex-col justify-start cursor-pointer"
+                  className={`lg:col-span-2 ${isSecondRowFirst ? "lg:col-start-2" : ""} bg-white border border-[#E2E8F0] rounded-[22px] p-7 sm:p-8 hover:shadow-xl hover:border-blue-200 transition-all duration-300 group flex flex-col justify-start cursor-pointer`}
                 >
                   <div className="w-16 h-16 rounded-full bg-[#F1F5FF] flex items-center justify-center mb-6 shrink-0 group-hover:scale-105 transition-transform duration-300">
                     <img
