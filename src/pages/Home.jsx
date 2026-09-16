@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import arrowAsset from "../assets/ARROW.png";
@@ -74,6 +74,70 @@ export default function Home() {
   const navigate = useNavigate();
   const projectsContainerRef = useRef(null);
   const targetScrollRef = useRef(0);
+  const videoRef = useRef(null);
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const canvas = canvasRef.current;
+    if (!video || !canvas) return;
+
+    let animationFrameId;
+    let videoCallbackId;
+    let isCancelled = false;
+
+    const ctx = canvas.getContext("2d");
+
+    const drawFrame = () => {
+      if (!video || !canvas || !ctx) return;
+      if (video.readyState >= 2) {
+        if (video.videoWidth && video.videoHeight) {
+          if (canvas.width !== video.videoWidth || canvas.height !== video.videoHeight) {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+          }
+        }
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      }
+    };
+
+    const renderLoop = () => {
+      if (isCancelled) return;
+      drawFrame();
+
+      if ("requestVideoFrameCallback" in video) {
+        videoCallbackId = video.requestVideoFrameCallback(renderLoop);
+      } else {
+        animationFrameId = requestAnimationFrame(renderLoop);
+      }
+    };
+
+    const onLoadedMetadata = () => {
+      if (video.videoWidth && video.videoHeight) {
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+      }
+      drawFrame();
+    };
+
+    video.addEventListener("loadedmetadata", onLoadedMetadata);
+    video.addEventListener("play", renderLoop);
+
+    renderLoop();
+
+    return () => {
+      isCancelled = true;
+      video.removeEventListener("loadedmetadata", onLoadedMetadata);
+      video.removeEventListener("play", renderLoop);
+      if (videoCallbackId && "cancelVideoFrameCallback" in video) {
+        video.cancelVideoFrameCallback(videoCallbackId);
+      }
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, []);
 
   const scrollProjects = (direction) => {
     if (projectsContainerRef.current) {
@@ -106,20 +170,39 @@ export default function Home() {
     <Layout>
       {/* ── HERO & STATS SECTION ── */}
       <section className="w-full bg-white pt-0 pb-12 sm:pb-14 md:pb-16 overflow-hidden flex flex-col items-center">
-        <div className="w-[90%] md:w-[70%] lg:w-[55%] max-w-[1050px] mx-auto bg-white">
+        <div
+          className="w-[90%] md:w-[70%] lg:w-[55%] max-w-[1050px] mx-auto bg-white"
+          style={{ lineHeight: 0 }}
+        >
           <video
+            ref={videoRef}
             src="https://res.cloudinary.com/kf1uuvct/video/upload/v1789543125/Galactixvideo_white.mp4"
-            preload="auto"
             autoPlay
             muted
             loop
             playsInline
+            preload="auto"
             controls={false}
-            className="block w-full h-auto"
+            aria-hidden="true"
             style={{
+              position: "absolute",
+              width: "1px",
+              height: "1px",
+              opacity: 0,
+              pointerEvents: "none",
+            }}
+          />
+
+          <canvas
+            ref={canvasRef}
+            width={1920}
+            height={1080}
+            className="block w-full h-auto bg-white"
+            style={{
+              display: "block",
               width: "100%",
               height: "auto",
-              display: "block",
+              backgroundColor: "#FFFFFF",
               border: "none",
               outline: "none",
               boxShadow: "none",
