@@ -111,15 +111,20 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.96, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.75, ease: easeOutCubic }}
-          className="w-[90%] md:w-[70%] lg:w-[55%] max-w-[1050px] mx-auto"
+          className="w-[90%] md:w-[70%] lg:w-[55%] max-w-[1050px] mx-auto overflow-hidden bg-white"
         >
           <video
-            src="https://res.cloudinary.com/kf1uuvct/video/upload/v1789105502/Galactixvideo_white.mp4"
+            src="https://res.cloudinary.com/kf1uuvct/video/upload/q_auto,f_auto,w_1050,c_scale/v1789105502/Galactixvideo_white.mp4"
+            preload="auto"
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-auto aspect-video block mx-auto bg-white object-contain"
+            disablePictureInPicture
+            disableRemotePlayback
+            controls={false}
+            className="w-full h-auto aspect-video block mx-auto bg-white object-cover border-0 outline-none"
+            style={{ objectFit: "cover" }}
           />
         </motion.div>
 
